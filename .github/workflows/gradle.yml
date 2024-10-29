@@ -14,7 +14,5 @@ jobs:
         uses: gradle/gradle-build-action@v3.5.0
 
       - name: Build with Gradle
-        run: |
-          pwd
-          ./gradlew build
+        run: ./gradlew build
         working-directory: gradle-example
