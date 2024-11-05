@@ -17,7 +17,7 @@ jobs:
         
       - name: Build with Gradle
         run: | 
-          jf rt gradle-config
-          jf rt gradle clean artifactoryPublish
+          jf gradle-config
+          jf gradle clean artifactoryPublish
         working-directory: gradle-example
         #Hello moto -b path/to/build.gradle
