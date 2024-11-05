@@ -12,8 +12,12 @@ jobs:
       - uses: actions/checkout@v4
       - name: Gradle Build Action
         uses: gradle/gradle-build-action@v3.5.0
-
+      - name: Setup JF Cli
+        uses: jfrog/setup-jfrog-cli@v4
+        
       - name: Build with Gradle
-        run: ./gradlew build
+        run: | 
+          jf rt gradle-config
+          jf rt gradle clean artifactoryPublish
         working-directory: gradle-example
-        #Hello moto
+        #Hello moto -b path/to/build.gradle
