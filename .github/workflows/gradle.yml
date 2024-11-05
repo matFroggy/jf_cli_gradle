@@ -22,6 +22,6 @@ jobs:
         run: | 
           jf gradle-config
           jf gradle clean artifactoryPublish
-          jf rt bp gradle-example --url https://psemea.jfrog.io/artifactory/api/gradle/ob1-mat
+          jf rt bp gradle-example --url https://psemea.jfrog.io/artifactory/api/gradle/ob1-mat --access-token $JF_ACCESS_TOKEN
         working-directory: gradle-example
         #Hello moto -b path/to/build.gradle
