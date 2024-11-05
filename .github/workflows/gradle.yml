@@ -19,5 +19,6 @@ jobs:
         run: | 
           jf gradle-config
           jf gradle clean artifactoryPublish
+          jf rt bp gradle-example
         working-directory: gradle-example
         #Hello moto -b path/to/build.gradle
