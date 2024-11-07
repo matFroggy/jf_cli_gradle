@@ -28,7 +28,6 @@ artifactory {
             repoKey = 'ob1-mat'
             username = "${artifactory_user}"
             password = "${artifactory_password}"
-            maven = true
         }
         defaults {
             // Reference to Gradle publications defined in the build script.
