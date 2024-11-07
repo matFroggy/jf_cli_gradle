@@ -32,7 +32,7 @@ jobs:
           jf gradle-config
           jf gradle init --overwrite
           ls -lRt
-          cat build.gradle
+          cat build.gradle.kts
           jf gradle build artifactoryPublish
           ls -lRt build
         working-directory: gradle-example
