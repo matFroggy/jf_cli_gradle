@@ -25,9 +25,10 @@ artifactory {
     contextUrl = 'https://psemea.jfrog.io/artifactory'
     publish {
         repository {
-            repoKey = 'libs-snapshot-local' // The Artifactory repository key to publish to
-            username = "${artifactory_user}" // The publisher user name
-            password = "${artifactory_password}" // The publisher password
+            repoKey = 'ob1-mat'
+            username = "${artifactory_user}"
+            password = "${artifactory_password}"
+            maven = true
         }
         defaults {
             // Reference to Gradle publications defined in the build script.
