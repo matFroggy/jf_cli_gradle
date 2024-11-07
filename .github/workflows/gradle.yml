@@ -31,6 +31,7 @@ jobs:
         run: | 
           jf gradle-config
           jf gradle init --overwrite
+          cat build.gradle
           jf gradle build artifactoryPublish
           ls -lRt build
         working-directory: gradle-example
