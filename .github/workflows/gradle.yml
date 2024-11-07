@@ -31,10 +31,7 @@ jobs:
         run: | 
           jf gradle-config
           jf gradle init --overwrite
-          ls -lRt
-          cat build.gradle.kts
           jf gradle build artifactoryPublish
-          ls -lRt build
         working-directory: gradle-example
         #Hello moto -b path/to/build.gradle
         #jf rt bp gradle-example --url https://psemea.jfrog.io/artifactory/ob1-mat --access-token $JF_ACCESS_TOKEN
