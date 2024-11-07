@@ -30,6 +30,7 @@ jobs:
       - name: Build with Gradle
         run: | 
           jf gradle-config
+          jf gradle init
           jf gradle clean artifactoryPublish
           ls -lRt build
         working-directory: gradle-example
