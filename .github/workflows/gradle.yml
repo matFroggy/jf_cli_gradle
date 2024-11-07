@@ -31,7 +31,7 @@ jobs:
         run: | 
           jf gradle-config
           jf gradle init --overwrite
-          jf gradle artifactoryPublish
+          jf gradle build artifactoryPublish
           ls -lRt build
         working-directory: gradle-example
         #Hello moto -b path/to/build.gradle
