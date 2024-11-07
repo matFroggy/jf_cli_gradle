@@ -30,7 +30,7 @@ jobs:
       - name: Build with Gradle
         run: | 
           jf gradle-config
-          jf gradle clean artifactoryPublish build/libs/gradle-example-1.0-SNAPSHOT.jar
+          jf gradle clean artifactoryPublish
           ls -lRt build
         working-directory: gradle-example
         #Hello moto -b path/to/build.gradle
