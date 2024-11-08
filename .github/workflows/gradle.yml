@@ -26,7 +26,7 @@ jobs:
           JF_PROJECT: ob1
         with:
           # Name of the OIDC provider as specified on the OIDC integration page in the JFrog Platform
-          oidc-provider-name: gradle
+          oidc-provider-name: mathieup-github
           
       - name: Build with Gradle
         run: | 
